@@ -1,7 +1,8 @@
 :root {
     --fundo: rgb(1,150,58);
     --letra: #FFFFFF;
-    --fundo-2: rgb(79, 216, 131);
+    --fundo-2: #12da6c;
+    --corlegal: #dbf4a7
 }
 
 *{
@@ -16,7 +17,8 @@
 }
 
 .painel {
-    background-color: var(--fundo);
+    background: linear-gradient(to bottom, var(--fundo), var(--fundo-2));
+
     color: var(--letra);
     display: flex;
     justify-content: space-around;
@@ -25,7 +27,8 @@
 }
 
 .cabeca {
-    width: 5%;
+    width: 25%;
+    height: 25%;
 }
 
 .cabeca-lista {
@@ -33,6 +36,13 @@
 }
 
 .cabeca-lista-item {
+    display: inline-block;
+    margin: 0 16px;
+    font-size: 24px;
+}
+
+.cabeca-lista-item1 {
+    color: var(--corlegal);
     display: inline-block;
     margin: 0 16px;
     font-size: 24px;
