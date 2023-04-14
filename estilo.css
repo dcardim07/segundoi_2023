@@ -6,63 +6,107 @@
     --verdeescu: rgb(17, 75, 39);
 }
 
-*{
+* {
     margin: 0;
-    padding: 0%;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+.container {
+    max-width: 100%; 
+    margin: 0 auto; 
+}
+
+@media (min-width: 768px) {
+}
+
+body {
+    overflow-x: hidden; 
+    overflow-y: hidden;
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    height: 100%;
 }
 
 .legal {
-    background: var(--fundo-2) ;
-    width: 100%;
-    height: 775px;
+    background: var(--fundo-2);
+    min-height: 100vh; 
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .painel {
-    background: linear-gradient(to bottom, var(--fundo), var(--fundo-2));
-
-    color: var(--letra);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, var(--fundo), var(--fundo-2));
+    color: var(--letra);
     align-items: center;
-    padding: 24px 0;
+    padding: 10px ;
+    justify-content: center;
 }
 
 .cabeca {
-    width: 25%;
-    height: 25%;
+    max-width: 100px;
+    height: auto;
 }
 
-.cabeca-lista-item {
+.cabeca-lista-item,
+.cabeca-lista-item1 {
     display: inline-block;
     margin: 0 16px;
     font-size: 24px;
+    text-decoration: none;
 }
 
 .cabeca-lista-item1 {
     color: var(--corlegal);
-    display: inline-block;
-    margin: 0 16px;
-    font-size: 24px;
+}
+
+.cabeca-lista {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 .maconha-titulo {
     text-align: center;
     font-size: 60px;
+    margin-top: 10px;
 }
 
-.texto1 {
-    text-align: center;
-    font-size: 24px;
-}
-
+.texto1,
 .texto2 {
     text-align: center;
     font-size: 24px;
 }
 
 .letrinha-kk {
-    font-size: 24px;
+    font-size: 32px;
     display:flex;
     justify-content: center;
+    text-indent: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
+.container2 {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+
+.minha-imagem {
+    height: auto;
+    max-width: 100%;
+}
