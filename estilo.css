@@ -73,10 +73,16 @@ body {
     gap: 10px;
 }
 
-.maconha-titulo {
+.maconha-titulo{
     text-align: center;
     font-size: 60px;
-    margin-top: 10px;
+    margin-top: -200px;
+}
+
+.maconha-titulo2 {
+    text-align: center;
+    font-size: 60px;
+    margin-top: -650px;
 }
 
 .texto1,
@@ -87,16 +93,29 @@ body {
 
 .letrinha-kk {
     font-size: 32px;
-    display:flex;
-    justify-content: center;
-    text-indent: 30px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    text-align: left;
+    text-indent: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.letrinha-kk2 {
+    font-size: 28px;
+    text-align: left;
+    text-indent: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+.negrito {
+    font-weight: bold;
+color: var(--verdeescu);
 }
 
 .container2 {
-    width: 200px;
-    height: 200px;
+    width: 500px;
+    height: 400px;
     overflow: hidden;
     position: fixed;
     bottom: 0;
